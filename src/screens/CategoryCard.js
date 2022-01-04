@@ -5,7 +5,7 @@ import { Image ,Text} from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 export const CategoryCard=({url,name,description})=>{
     return(
-       <ImageBackground source={require('../assets/productbackground2.png')} style={styles.conatiner}>
+       <View style={styles.conatiner}>
          <View style={{flexDirection:'row'}}>
          <View style={styles.left}>
             
@@ -21,13 +21,13 @@ export const CategoryCard=({url,name,description})=>{
             <TouchableOpacity>
 
             
-            <Text style={{color:'#146588',fontWeight:'800'}}>EXPLORE</Text>
+            <Text style={{color:'#146588',fontWeight:'800',marginTop:5,marginBottom:5,}}>EXPLORE</Text>
             </TouchableOpacity>
             <Image style={{height:15,width:15,}} source={require('../assets/share.jpg')}/>
             </View>
          </View>
          </View>
-       </ImageBackground>
+       </View>
     )
 }
 
@@ -39,6 +39,7 @@ const styles=StyleSheet.create({
         marginTop:20,
         borderTopLeftRadius:50,
         borderBottomLeftRadius:50,
+        backgroundColor:'#E0ECDE',
 
     },
     image:{

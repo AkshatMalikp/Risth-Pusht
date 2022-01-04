@@ -101,12 +101,12 @@ export const Home=()=>{
                   )
            })
                }
-        <Text style={{fontSize:18,fontWeight:'700' ,}}>Featured Prodct</Text>
+        <Text style={{fontSize:18,fontWeight:'700' ,marginTop:40,}}>Featured Prodct</Text>
         {
               data.map((item,index)=>{
                   return(
                     
-                <ProductCard  name={item.title} description={item.description} price={item.price} amount={item.quantity} url={item.image}/>
+                <ProductCard   name={item.title} description={item.description} price={item.price} amount={item.quantity} url={item.image}/>
                   )
            })
                }
