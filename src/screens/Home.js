@@ -106,7 +106,7 @@ export const Home=()=>{
               data.map((item,index)=>{
                   return(
                     
-                <ProductCard  name={item.title} description={item.description} price={item.price} amount={item.quantity} url={item.image}/>
+                <ProductCard   name={item.title} description={item.description} price={item.price} amount={item.quantity} url={item.image}/>
                   )
            })
                }
